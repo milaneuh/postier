@@ -59,9 +59,15 @@
 !_TAG_ROLE_DESCRIPTION!Go!package	imported	/imported package/
 !_TAG_ROLE_DESCRIPTION!Go!unknown	receiverType	/receiver type/
 Execute	cmd/cli.go	/^func Execute() error {$/;"	f	line:16	package:cmd	typeref:typename:error
+Execute	cmd/root.go	/^func Execute() error {$/;"	f	line:49	package:cmd	typeref:typename:error
 cmd	cmd/cli.go	/^package cmd$/;"	p	line:1
+cmd	cmd/root.go	/^package cmd$/;"	p	line:1
+getCmd	cmd/root.go	/^var getCmd = &cobra.Command{$/;"	v	line:19	package:cmd
 init	cmd/cli.go	/^func init() {$/;"	f	line:12	package:cmd
+init	cmd/root.go	/^func init() {$/;"	f	line:44	package:cmd
 main	main.go	/^func main() {$/;"	f	line:10	package:main
 main	main.go	/^package main$/;"	p	line:1
 rootCmd	cmd/cli.go	/^var rootCmd = &cobra.Command{$/;"	v	line:7	package:cmd
+rootCmd	cmd/root.go	/^var rootCmd = &cobra.Command{$/;"	v	line:14	package:cmd
 verbose	cmd/cli.go	/^var verbose bool$/;"	v	line:5	package:cmd	typeref:typename:bool
+verbose	cmd/root.go	/^var verbose bool$/;"	v	line:12	package:cmd	typeref:typename:bool
