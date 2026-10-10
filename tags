@@ -9,6 +9,8 @@
 !_TAG_FIELD_DESCRIPTION	name	/tag name/
 !_TAG_FIELD_DESCRIPTION	pattern	/pattern/
 !_TAG_FIELD_DESCRIPTION	typeref	/Type and name of a variable or typedef/
+!_TAG_FIELD_DESCRIPTION!Go	package	/the real package specified by the package name/
+!_TAG_FIELD_DESCRIPTION!Go	packageName	/the name for referring the package/
 !_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
 !_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
 !_TAG_KIND_DESCRIPTION!DTD	E,entity	/entities/
@@ -16,6 +18,19 @@
 !_TAG_KIND_DESCRIPTION!DTD	e,element	/elements/
 !_TAG_KIND_DESCRIPTION!DTD	n,notation	/notations/
 !_TAG_KIND_DESCRIPTION!DTD	p,parameterEntity	/parameter entities/
+!_TAG_KIND_DESCRIPTION!Go	M,anonMember	/struct anonymous members/
+!_TAG_KIND_DESCRIPTION!Go	P,packageName	/name for specifying imported package/
+!_TAG_KIND_DESCRIPTION!Go	Y,unknown	/unknown/
+!_TAG_KIND_DESCRIPTION!Go	a,talias	/type aliases/
+!_TAG_KIND_DESCRIPTION!Go	c,const	/constants/
+!_TAG_KIND_DESCRIPTION!Go	f,func	/functions/
+!_TAG_KIND_DESCRIPTION!Go	i,interface	/interfaces/
+!_TAG_KIND_DESCRIPTION!Go	m,member	/struct members/
+!_TAG_KIND_DESCRIPTION!Go	n,methodSpec	/interface method specification/
+!_TAG_KIND_DESCRIPTION!Go	p,package	/packages/
+!_TAG_KIND_DESCRIPTION!Go	s,struct	/structs/
+!_TAG_KIND_DESCRIPTION!Go	t,type	/types/
+!_TAG_KIND_DESCRIPTION!Go	v,var	/variables/
 !_TAG_KIND_DESCRIPTION!Markdown	S,subsection	/level 2 sections/
 !_TAG_KIND_DESCRIPTION!Markdown	T,l4subsection	/level 4 sections/
 !_TAG_KIND_DESCRIPTION!Markdown	c,chapter	/chapters/
@@ -29,6 +44,7 @@
 !_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
 !_TAG_OUTPUT_VERSION	1.1	/current.age/
 !_TAG_PARSER_VERSION!DTD	0.0	/current.age/
+!_TAG_PARSER_VERSION!Go	0.0	/current.age/
 !_TAG_PARSER_VERSION!Markdown	1.1	/current.age/
 !_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
 !_TAG_PROC_CWD	/Users/milan/projects/postier/	//
@@ -40,3 +56,7 @@
 !_TAG_ROLE_DESCRIPTION!DTD!parameterEntity	condition	/conditions/
 !_TAG_ROLE_DESCRIPTION!DTD!parameterEntity	elementName	/element names/
 !_TAG_ROLE_DESCRIPTION!DTD!parameterEntity	partOfAttDef	/part of attribute definition/
+!_TAG_ROLE_DESCRIPTION!Go!package	imported	/imported package/
+!_TAG_ROLE_DESCRIPTION!Go!unknown	receiverType	/receiver type/
+main	main.go	/^func main() {$/;"	f	line:9	package:main
+main	main.go	/^package main$/;"	p	line:1
