@@ -58,5 +58,10 @@
 !_TAG_ROLE_DESCRIPTION!DTD!parameterEntity	partOfAttDef	/part of attribute definition/
 !_TAG_ROLE_DESCRIPTION!Go!package	imported	/imported package/
 !_TAG_ROLE_DESCRIPTION!Go!unknown	receiverType	/receiver type/
-main	main.go	/^func main() {$/;"	f	line:9	package:main
+Execute	cmd/cli.go	/^func Execute() error {$/;"	f	line:16	package:cmd	typeref:typename:error
+cmd	cmd/cli.go	/^package cmd$/;"	p	line:1
+init	cmd/cli.go	/^func init() {$/;"	f	line:12	package:cmd
+main	main.go	/^func main() {$/;"	f	line:10	package:main
 main	main.go	/^package main$/;"	p	line:1
+rootCmd	cmd/cli.go	/^var rootCmd = &cobra.Command{$/;"	v	line:7	package:cmd
+verbose	cmd/cli.go	/^var verbose bool$/;"	v	line:5	package:cmd	typeref:typename:bool
