@@ -9,8 +9,6 @@ import (
 	"path/filepath"
 )
 
-// Version is the schema version of the config file. Bump it when the on-disk
-// shape changes in a way that needs migrating.
 const Version = 1
 
 type Config struct {
@@ -95,6 +93,11 @@ func (c *Config) Save() error {
 // every layer. Pure apart from os.Getenv, so tests can cover the precedence
 // matrix without touching the filesystem.
 func Resolve(file *Config, flagURL, flagToken, buildDefault string) *Config {
+	// A nil file config means the same thing as an empty one: nothing on disk.
+	if file == nil {
+		file = &Config{}
+	}
+
 	out := *file // value copy: safe while every field is a value type
 
 	if out.URL == "" {
